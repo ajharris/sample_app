@@ -4,4 +4,5 @@
   <% if current_user.admin? && !current_user?(user) %>
   	<div align="right"><%= link_to "delete", user, method: :delete, data: {confirm: "You sure?"}%></div>
   <% end %>
+  <hr>
 </li>
